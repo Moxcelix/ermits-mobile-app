@@ -33,6 +33,4 @@ public class CustomPerson : MonoBehaviour
             _parts[i].ChangeColor(colors[i]);
         }
     }
-
-
 }

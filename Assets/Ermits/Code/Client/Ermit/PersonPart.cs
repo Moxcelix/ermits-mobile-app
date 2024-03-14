@@ -9,6 +9,7 @@ public class PersonPart
     [SerializeField] private Color _defaultColor;
 
     public string Name => _name;
+
     public Core.Customizer.Color DefaultColor => ColorUnityToCostomizer(_defaultColor);
 
     public void ChangeColor(Core.Customizer.Color color)

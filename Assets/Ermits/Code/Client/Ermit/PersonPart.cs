@@ -10,19 +10,10 @@ public class PersonPart
 
     public string Name => _name;
 
-    public Core.Customizer.Color DefaultColor => ColorUnityToCostomizer(_defaultColor);
+    public Color DefaultColor => _defaultColor;
 
-    public void ChangeColor(Core.Customizer.Color color)
+    public void ChangeColor(Color color)
     {
-        _meshRenderer.materials[_materialIndex].color = ColorCostomizerToUnity(color);
-    }
-
-    private Color ColorCostomizerToUnity(Core.Customizer.Color color)
-    {
-        return new Color(color.r, color.g, color.b);
-    }
-    private Core.Customizer.Color ColorUnityToCostomizer(Color color)
-    {
-        return new Core.Customizer.Color() { r = color.r, g = color.g, b = color.b };
+        _meshRenderer.materials[_materialIndex].color = color;
     }
 }

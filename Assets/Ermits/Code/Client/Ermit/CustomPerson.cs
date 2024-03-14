@@ -26,11 +26,33 @@ public class CustomPerson : MonoBehaviour
         }
     }
 
-    public void SetColors(Core.Customizer.Color[] colors)
+    public void SetColors(Color[] colors)
     {
         for (int i = 0; i < colors.Length; i++)
         {
-            _parts[i].ChangeColor(colors[i]);
+            _colorful.Coloreds[i].ChangeColor(colors[i]);
         }
+    }
+
+    public void SetColor(string name, Color color)
+    {
+        int index = -1;
+
+        for (int i = 0; i < _parts.Length; i++)
+        {
+            if (_parts[i].Name == name)
+            {
+                index = i;
+
+                break;
+            }
+        }
+
+        if(index == -1)
+        {
+            return;
+        }
+
+        _colorful.Coloreds[index].ChangeColor(color);
     }
 }

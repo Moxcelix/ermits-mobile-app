@@ -3,13 +3,17 @@ using UnityEngine;
 
 namespace Core.Customizer
 {
+    [System.Serializable]
     public class TextureCarousel : ICarousel
     {
+        [SerializeField] private string _name;
         [SerializeField] private List<TexturePart> _texturePart;
 
         private int _currentItemIndex = 0;
 
         public List<IItem> Items { get; private set; }
+
+        public string Title => _name;
 
         public void Initialize()
         {

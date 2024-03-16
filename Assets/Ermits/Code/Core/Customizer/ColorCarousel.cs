@@ -6,11 +6,14 @@ namespace Core.Customizer
     [System.Serializable]
     public class ColorCarousel : ICarousel
     {
+        [SerializeField] private string _name;
         [SerializeField] private List<ColorPart> _colorParts;
 
         private int _currentItemIndex = 0;
 
         public List<IItem> Items { get; private set; }
+
+        public string Title => _name;
 
         public void Initialize()
         {

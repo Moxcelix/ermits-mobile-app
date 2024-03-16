@@ -123,6 +123,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &184861691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7147304354511955016, guid: 7d03719e3ebf5a64ba375b689e817468,
+    type: 3}
+  m_PrefabInstance: {fileID: 438437021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &184861694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184861691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: hair
+  _meshParts:
+  - _materials:
+    - {fileID: 2100000, guid: 25d925d2bff7985479bfc0e3e8c5f38b, type: 2}
+    _mesh: {fileID: -7831782004384364205, guid: b16c181f43c268243bed2a93df753f0c,
+      type: 3}
+    _colorCarousels:
+    - _name: hair_color
+      _colorParts:
+      - _color: {r: 1, g: 1, b: 1, a: 1}
+        _materialIndex: 0
+      - _color: {r: 0.6698113, g: 0.5222343, b: 0.38798502, a: 1}
+        _materialIndex: 0
+      - _color: {r: 0.9899294, g: 0.6924528, b: 1, a: 1}
+        _materialIndex: 0
+    _textureCarousels: []
+  - _materials:
+    - {fileID: 2100000, guid: e26440a2b3d30b948ae80fe6e0ff580c, type: 2}
+    _mesh: {fileID: -4169343001769180689, guid: f88d2f78fe9abc34f8b3530baa3eb3bc,
+      type: 3}
+    _colorCarousels:
+    - _name: hair_color
+      _colorParts:
+      - _color: {r: 1, g: 1, b: 1, a: 1}
+        _materialIndex: 0
+      - _color: {r: 0.6698113, g: 0.5222343, b: 0.38798502, a: 1}
+        _materialIndex: 0
+      - _color: {r: 0.9899294, g: 0.6924528, b: 1, a: 1}
+        _materialIndex: 0
+    _textureCarousels: []
 --- !u!1 &217225667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1086810566713350743, guid: 7d03719e3ebf5a64ba375b689e817468,
@@ -141,18 +189,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _name: body
   _meshParts:
   - _materials:
     - {fileID: 2100000, guid: befa8eaa731e17f4d8c8d8c060d954ba, type: 2}
     _mesh: {fileID: -220162847245257293, guid: b16c181f43c268243bed2a93df753f0c, type: 3}
-    _colorCarousel:
-      _colorParts: []
+    _colorCarousels: []
+    _textureCarousels: []
   - _materials:
     - {fileID: 2100000, guid: e4adc5953ff1dfa48b2a14bac8408718, type: 2}
     - {fileID: 2100000, guid: a460b9dfd45190340bb3715fa2913c75, type: 2}
     _mesh: {fileID: 5944265668383319401, guid: f88d2f78fe9abc34f8b3530baa3eb3bc, type: 3}
-    _colorCarousel:
-      _colorParts: []
+    _colorCarousels:
+    - _name: shirt_color
+      _colorParts:
+      - _color: {r: 1, g: 0, b: 0, a: 1}
+        _materialIndex: 0
+      - _color: {r: 0, g: 1, b: 0.34162378, a: 1}
+        _materialIndex: 0
+      - _color: {r: 0, g: 0.44075108, b: 1, a: 1}
+        _materialIndex: 0
+      - _color: {r: 1, g: 0.62783766, b: 0, a: 1}
+        _materialIndex: 0
+      - _color: {r: 1, g: 0.9598201, b: 0, a: 1}
+        _materialIndex: 0
+    _textureCarousels: []
 --- !u!1 &412802522
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +377,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d03719e3ebf5a64ba375b689e817468, type: 3}
+--- !u!1 &659266628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2507993573622121559, guid: 7d03719e3ebf5a64ba375b689e817468,
+    type: 3}
+  m_PrefabInstance: {fileID: 438437021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &659266631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659266628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: shoes
+  _meshParts:
+  - _materials:
+    - {fileID: 2100000, guid: e084c7fdb070039439451cbd984ae69d, type: 2}
+    _mesh: {fileID: -2687737059924682079, guid: b16c181f43c268243bed2a93df753f0c,
+      type: 3}
+    _colorCarousels: []
+    _textureCarousels: []
+  - _materials:
+    - {fileID: 2100000, guid: 2cc0f8db8dd15204f84d67ff8d71f9bb, type: 2}
+    _mesh: {fileID: 622423436814598343, guid: f88d2f78fe9abc34f8b3530baa3eb3bc, type: 3}
+    _colorCarousels: []
+    _textureCarousels: []
 --- !u!1 &928768025
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,6 +492,56 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1975307384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5095611637078838802, guid: 7d03719e3ebf5a64ba375b689e817468,
+    type: 3}
+  m_PrefabInstance: {fileID: 438437021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1975307387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975307384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: scarf
+  _meshParts:
+  - _materials: []
+    _mesh: {fileID: -820004045447281791, guid: f88d2f78fe9abc34f8b3530baa3eb3bc, type: 3}
+    _colorCarousels: []
+    _textureCarousels:
+    - _name: scarf_type
+      _texturePart:
+      - _texture: {fileID: 2800000, guid: 3765c3cb466a043419693b401343c2f0, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: ab1438394c8e2414dbbe52bdeb8201d7, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: d254c46b2e6ba434da1770afc0e1385b, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: 2ca52b104afb6264286351d5d843fa34, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: 62e65ba2fda871c4b8b9d0bcc14e7a5e, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: 4dcb75e508b248d4d96404457eaae764, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: 785feb5f54777b74fb68434de03de7d8, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: d5bd922370685f643b24778b7617b6e6, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: d59752a342b851246aa75a8a4e1b8f59, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: b16a38646d5dbf74d9d596545486ebba, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: 81d6550e91f749349be147ab204bd34e, type: 3}
+        _materialIndex: 0
+      - _texture: {fileID: 2800000, guid: 0aae20d38b94bc74ea5590e9f983f1ff, type: 3}
+        _materialIndex: 0
 --- !u!1001 &1994545583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,3 +611,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53172492d32190240b30ecd915101f8c, type: 3}
+--- !u!1 &2132946662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3412094891078699882, guid: 7d03719e3ebf5a64ba375b689e817468,
+    type: 3}
+  m_PrefabInstance: {fileID: 438437021}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2132946665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132946662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: pants
+  _meshParts:
+  - _materials:
+    - {fileID: 2100000, guid: 26758f70301eb6543b464c7f62faeb0c, type: 2}
+    _mesh: {fileID: -1809405025750847049, guid: b16c181f43c268243bed2a93df753f0c,
+      type: 3}
+    _colorCarousels: []
+    _textureCarousels: []
+  - _materials:
+    - {fileID: 2100000, guid: 6f7a65d807012b342a2f0c872eb3d787, type: 2}
+    - {fileID: 2100000, guid: 2382ad4b7c88f46479fc7ffa587c8fdb, type: 2}
+    _mesh: {fileID: 5692721485410073760, guid: f88d2f78fe9abc34f8b3530baa3eb3bc, type: 3}
+    _colorCarousels: []
+    _textureCarousels: []

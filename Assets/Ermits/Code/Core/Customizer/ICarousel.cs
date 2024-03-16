@@ -6,6 +6,8 @@ namespace Core.Customizer
     {
         public List<IItem> Items { get; }
 
+        public string Title { get; }
+
         public void Next();
 
         public void Prev();

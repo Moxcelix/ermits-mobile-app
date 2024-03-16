@@ -11,7 +11,7 @@ public class SceneButton : MonoBehaviour
     {
         if (Enabled)
         {
-            Invoke("Callback", 0.1f);
+            Invoke(nameof(Callback), 0.1f);
         }
     }
 

@@ -7,7 +7,7 @@ namespace Packages.ColorPicker
     public class PaletteUI : MonoBehaviour
     {
         public delegate void OnColorSelectDelegate(Color color);
-        private event OnColorSelectDelegate onColorSelectEvent;
+        private event OnColorSelectDelegate OnColorSelectEvent;
 
         private readonly List<ColorVariantUI> _colorVariants = new List<ColorVariantUI>();
 
@@ -22,7 +22,7 @@ namespace Packages.ColorPicker
         {
             _pallete = new Palette();
 
-            _confirmButton.onClick.AddListener(() => onColorSelectEvent?.Invoke(
+            _confirmButton.onClick.AddListener(() => OnColorSelectEvent?.Invoke(
                     _pallete.GetColor(_pallete.SelectedColorIndex).Color));
 
             foreach (Transform child in _variantsOrigin)
@@ -46,7 +46,7 @@ namespace Packages.ColorPicker
 
         public void AddColorSelectListener(OnColorSelectDelegate call)
         {
-            onColorSelectEvent += call;
+            OnColorSelectEvent += call;
         }
 
         private void OnColorVariantClick(int index)

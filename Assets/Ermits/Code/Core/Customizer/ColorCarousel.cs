@@ -13,6 +13,8 @@ namespace Core.Customizer
 
         public List<IItem> Items { get; private set; }
 
+        public ColorPart CurrentColorPart => _colorParts[_currentItemIndex];
+
         public string Title => _name;
 
         public void Initialize()

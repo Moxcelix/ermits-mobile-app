@@ -12,6 +12,8 @@ namespace Core.Customizer
 
         public List<IItem> Items { get; private set; }
 
+        public MeshPart CurrentMeshPart => _meshParts[_currentItemIndex];
+
         public string Title => _name;
 
         private void Awake()

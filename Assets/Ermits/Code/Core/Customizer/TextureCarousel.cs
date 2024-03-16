@@ -13,6 +13,8 @@ namespace Core.Customizer
 
         public List<IItem> Items { get; private set; }
 
+        public TexturePart CurrentTexturePart => _texturePart[_currentItemIndex];
+
         public string Title => _name;
 
         public void Initialize()

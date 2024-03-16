@@ -14,7 +14,11 @@ namespace Core.Customizer
 
         public List<ICarousel> Carousels => new List<ICarousel>();
 
-        public Material[] Materials => _materials; 
+        public Material[] Materials => _materials;
+
+        public ColorCarousel[] ColorCarousels => _colorCarousels;
+
+        public TextureCarousel[] TextureCarousels => _textureCarousels;
 
         public Mesh Mesh => _mesh;
 

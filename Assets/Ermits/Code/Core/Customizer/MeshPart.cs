@@ -12,7 +12,9 @@ namespace Core.Customizer
         [SerializeField] private ColorCarousel[] _colorCarousels;
         [SerializeField] private TextureCarousel[] _textureCarousels;
 
-        public List<ICarousel> Carousels => new List<ICarousel>();
+        private readonly List<ICarousel> _carousels = new List<ICarousel>();
+
+        public List<ICarousel> Carousels => _carousels;
 
         public Material[] Materials => _materials;
 
@@ -44,7 +46,7 @@ namespace Core.Customizer
             {
                 if (carousel.Items.Count > 0)
                 {
-                    Carousels.Add(carousel);
+                    _carousels.Add(carousel);
                 }
             }
             

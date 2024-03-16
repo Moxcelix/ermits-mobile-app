@@ -30,6 +30,17 @@ namespace Core.Customizer
                     [carousel.CurrentColorPart.MaterialIndex].color =
                     carousel.CurrentColorPart.Color;
             }
+
+            foreach (var carousel in _meshCarousel.CurrentMeshPart.TextureCarousels)
+            {
+                if (carousel == null || carousel.Items.Count == 0)
+                {
+                    continue;
+                }
+                _meshRenderer.materials[
+                    carousel.CurrentTexturePart.MaterialIndex].
+                    SetTexture("_MainTex", carousel.CurrentTexturePart.Texture);
+            }
         }
     }
 }

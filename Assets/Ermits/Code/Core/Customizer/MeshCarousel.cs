@@ -47,5 +47,15 @@ namespace Core.Customizer
                 _currentItemIndex = Items.Count - 1;
             }
         }
+
+        public int GetChoice()
+        {
+            return _currentItemIndex;
+        }
+
+        public void SetChoice(int choice)
+        {
+            _currentItemIndex = choice;
+        }
     }
 }

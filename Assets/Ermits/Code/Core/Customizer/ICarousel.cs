@@ -11,6 +11,10 @@ namespace Core.Customizer
         public void Next();
 
         public void Prev();
+
+        public int GetChoice();
+
+        public void SetChoice(int choice);
     }
 
 }

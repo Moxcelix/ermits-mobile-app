@@ -265,14 +265,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: hair
+  _name: "\u0412\u043E\u043B\u043E\u0441\u044B"
   _meshParts:
   - _materials:
     - {fileID: 2100000, guid: 25d925d2bff7985479bfc0e3e8c5f38b, type: 2}
     _mesh: {fileID: -7831782004384364205, guid: b16c181f43c268243bed2a93df753f0c,
       type: 3}
     _colorCarousels:
-    - _name: hair_color
+    - _name: "\u0426\u0432\u0435\u0442 \u0432\u043E\u043B\u043E\u0441"
       _colorParts:
       - _color: {r: 1, g: 1, b: 1, a: 1}
         _materialIndex: 0
@@ -308,6 +308,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _meshCarousel: {fileID: 184861694}
+--- !u!1 &209079786 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4633540931065940008, guid: 7d03719e3ebf5a64ba375b689e817468,
+    type: 3}
+  m_PrefabInstance: {fileID: 438437021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &217225667 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1086810566713350743, guid: 7d03719e3ebf5a64ba375b689e817468,
@@ -326,7 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: body
+  _name: "\u041A\u0443\u0440\u0442\u043A\u0430"
   _meshParts:
   - _materials:
     - {fileID: 2100000, guid: befa8eaa731e17f4d8c8d8c060d954ba, type: 2}
@@ -338,17 +344,17 @@ MonoBehaviour:
     - {fileID: 2100000, guid: a460b9dfd45190340bb3715fa2913c75, type: 2}
     _mesh: {fileID: 5944265668383319401, guid: f88d2f78fe9abc34f8b3530baa3eb3bc, type: 3}
     _colorCarousels:
-    - _name: shirt_color
+    - _name: "\u0426\u0432\u0435\u0442"
       _colorParts:
-      - _color: {r: 1, g: 0, b: 0, a: 1}
+      - _color: {r: 0.8207547, g: 0.3670167, b: 0.3670167, a: 1}
         _materialIndex: 0
-      - _color: {r: 0, g: 1, b: 0.34162378, a: 1}
+      - _color: {r: 0.46381274, g: 0.6698113, b: 0.5582939, a: 1}
         _materialIndex: 0
-      - _color: {r: 0, g: 0.44075108, b: 1, a: 1}
+      - _color: {r: 0.6443574, g: 0.7756999, b: 0.9433962, a: 1}
         _materialIndex: 0
-      - _color: {r: 1, g: 0.62783766, b: 0, a: 1}
+      - _color: {r: 0.6792453, g: 0.6061944, b: 0.48316127, a: 1}
         _materialIndex: 0
-      - _color: {r: 1, g: 0.9598201, b: 0, a: 1}
+      - _color: {r: 0.8396226, g: 0.8344662, b: 0.70813453, a: 1}
         _materialIndex: 0
     _textureCarousels: []
 --- !u!114 &217225671
@@ -551,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: shoes
+  _name: "\u0411\u043E\u0442\u0438\u043D\u043A\u0438"
   _meshParts:
   - _materials:
     - {fileID: 2100000, guid: e084c7fdb070039439451cbd984ae69d, type: 2}
@@ -651,6 +657,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 438437021}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &802342381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209079786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a650b63e7d11c47a07dcb21112a516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carousels:
+  - {fileID: 184861694}
+  - {fileID: 2132946665}
+  - {fileID: 1975307387}
+  - {fileID: 659266631}
+  - {fileID: 217225670}
 --- !u!1 &879158435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,14 +1671,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: scarf
+  _name: "\u0428\u0430\u0440\u0444"
   _meshParts:
   - _materials:
     - {fileID: 2100000, guid: 3e3b6e53d2b19944c8fe0f910f2e71ff, type: 2}
     _mesh: {fileID: -820004045447281791, guid: f88d2f78fe9abc34f8b3530baa3eb3bc, type: 3}
     _colorCarousels: []
     _textureCarousels:
-    - _name: scarf_type
+    - _name: "\u0428\u0430\u0440\u0444"
       _texturePart:
       - _texture: {fileID: 2800000, guid: 3765c3cb466a043419693b401343c2f0, type: 3}
         _materialIndex: 0
@@ -1835,7 +1859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea052adcbbf722458a930e857d77bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _name: pants
+  _name: "\u0428\u0442\u0430\u043D\u044B"
   _meshParts:
   - _materials:
     - {fileID: 2100000, guid: 26758f70301eb6543b464c7f62faeb0c, type: 2}

@@ -29,6 +29,7 @@ namespace Core.Customizer
 
             LoadByLiteral(literals[0], rootCarousel);
 
+
             for (int i = 1; i < literals.Length; i++)
             {
                 LoadByLiteral(literals[i], rootCarousel.Items[rootCarousel.GetChoice()].Carousels[i - 1]);
